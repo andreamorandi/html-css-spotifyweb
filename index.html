@@ -23,22 +23,29 @@
         <!-- LEFT BAR -->
         <div id="l-bar" class="font-size-s">
 
+            <!-- LEFT BAR TOP -->
             <div class="l-bar-top">
                 <img src="img/logo.svg" id="logo" alt="logo">
                 <img src="img/logo-small.svg" id="logo-small" alt="logo">
 
                 <ul class="navigation">
                     <li>
-                        <a href="#" class="keep"><img src="img/home.svg" alt="home"></a>
-                        <a href="#">Home</a>
+                        <a href="#" class="nav-a">
+                            <img src="img/home.svg" alt="home">
+                            <span class="hide">Home</span>
+                        </a>
                     </li>
                     <li>
-                        <a href="#" class="keep"><img src="img/search.svg" alt="search"></a>
-                        <a href="#">Cerca</a>
+                        <a href="#" class="nav-a">
+                            <img src="img/search.svg" alt="search">
+                            <span class="hide">Cerca</span>
+                        </a>
                     </li>
                     <li>
-                        <a href="#" class="keep"><img src="img/libreria.svg" alt="library"></a>
-                        <a href="#">La tua libreria</a>
+                        <a href="#" class="nav-a">
+                            <img src="img/libreria.svg" alt="library">
+                            <span class="hide">La tua libreria</span>
+                        </a>
                     </li>
                 </ul>
 
@@ -46,9 +53,11 @@
                     <li>
                         <h3 class="font-size-m bold-1">PLAYLIST</h3>
                     </li>
-                    <li class="font-size-m">
-                        <a href="#"><i class="fa-sharp fa-solid fa-square-plus"></i></a>
-                        <a href="#">Crea Playlist</a>
+                    <li class="font-size-m new-playlist">
+                        <a href="#">
+                            <i id="playlist-icon" class="fa-sharp fa-solid fa-square-plus"></i>
+                            <span>Crea Playlist</span>
+                        </a>
                     </li>
                     <ul class="playlist-scroll">
                         <li><a href="#">Nome Playlist</a></li>
@@ -85,12 +94,13 @@
                 </ul>
             </div>
             
+            <!-- LEFT BAR BOTTOM -->
             <div class="l-bar-bottom">
                 <a href="#" class="keep"><img src="img/download.svg" alt="download"></a>
-                <a href="#">Installa app</a>
-                <hr>
+                <a href="#" class="medium-grey hide">Installa app</a>
+                <hr class="hide">
                 <a href="#" class="keep"><img src="img/profile.svg" id="profile" alt="profile"></a>
-                <a href="#"><h2 class="font-size-m bold-1">John Doe</h2></a>
+                <a href="#"><h2 class="font-size-m bold-1 hide">John Doe</h2></a>
             </div>
 
         </div>
@@ -258,7 +268,55 @@
 
         <!-- BOTTOM BAR -->
         <div id="b-bar">
-            
+
+            <!-- BOTTOM BAR LEFT -->
+            <div class="b-bar-left">
+                <div class="song-info">
+                    <img src="img/sinister.jpeg" alt="sinister">
+                    <div class="song-title">
+                        <span class="font-size-s">Sinister</span>
+                        <a href="#" class="font-size-xs medium-grey underline-hover">Brano Nome</a>
+                    </div>
+                </div>
+                <div class="song-icons">
+                    <i class="fa-regular fa-heart medium-grey"></i>
+                    <i class="fa-regular fa-folder medium-grey"></i>
+                </div>
+            </div>
+
+            <!-- BOTTOM BAR CENTER -->
+            <div class="b-bar-center">
+                <div class="b-bar-center-top">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-regular fa-circle-play play-icon"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+                <div class="b-bar-center-bottom">
+                    <span class="font-size-xs">0:25</span>
+                    <div class="play-bar">
+                        <div class="play-fill">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                    <span class="font-size-xs">4:35</span>
+                </div>
+            </div>
+                
+            <!-- BOTTOM BAR RIGHT -->
+            <div class="b-bar-right">
+                <!-- <i class="fa-sharp fa-solid fa-ellipsis-vertical"></i> -->
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-display"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <div class="volume-bar">
+                    <div class="volume-fill">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+
         </div>
         <!-- /BOTTOM BAR -->
 
